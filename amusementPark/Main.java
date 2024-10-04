@@ -25,10 +25,7 @@ public class Main {
                 user = new RealUser();
                 user.makeFun();
             }
-            default -> {
-                System.out.println("no such user lol");
-                return;
-            }
-        };
+            default -> System.out.println("no such user lol");
+        }
     }
 }

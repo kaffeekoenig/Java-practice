@@ -8,8 +8,4 @@ public abstract class Attraction {
     public int getPrice() {
         return price;
     }
-
-    public int getPlaceCount() {
-        return placeCount;
-    }
 }
