@@ -1,9 +1,12 @@
 package amusementPark;
 
 public abstract class Attraction {
-    int price;
-    int placeCount;
+    private int price;
     abstract void ride();
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
 
     public int getPrice() {
         return price;
