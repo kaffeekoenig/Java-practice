@@ -26,7 +26,7 @@ public class VirtualUser extends User{
         int atrNum = random.nextInt(3);
         Attraction[] attractions = {new RollerCoaster(), new Carousel(), new FuturamaCab()};
         Attraction minPricedAttr = findMin(attractions);
-        int attrPrice = 0;
+        int attrPrice;
 
         while (wallet > minPricedAttr.getPrice()) {
             attrPrice = attractions[atrNum].getPrice();
