@@ -1,10 +1,7 @@
 package chess;
 
-import java.io.*;
-import java.util.logging.Logger;
 public class Main {
-    private static final Logger logger = Logger.getLogger(Main.class.getName());
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
         String filename = "masha-sasha.txt";
         String[] players = filename.split("-");
         players[1] = players[1].substring(0, players[1].indexOf("."));
