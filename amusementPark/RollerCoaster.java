@@ -3,14 +3,15 @@ package amusementPark;
 import java.util.Random;
 
 public class RollerCoaster extends Attraction{
-    private final int DEAD_NUM = 5;
     public RollerCoaster(){
         this.setPrice(10);
     }
-    @Override
-    void ride() {
+    private int diceSimulator() {
         Random rand = new Random();
-        int chance = rand.nextInt(20) + 1;
-        System.out.println(chance <= DEAD_NUM ? "u are dead lol xD xD xD" : "roller coaster wooah!");
+        return rand.nextInt(20) + 1;
+    }
+    @Override
+    public void ride() {
+        System.out.println(diceSimulator() <= 1 ? "u are dead lol xD xD xD" : "roller coaster wooah!");
     }
 }
