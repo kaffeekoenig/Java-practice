@@ -2,8 +2,7 @@ package amusementPark;
 
 public class Carousel extends Attraction{
     public Carousel() {
-        price = 5;
-        placeCount = 30;
+        this.setPrice(5);
     }
 
     @Override
