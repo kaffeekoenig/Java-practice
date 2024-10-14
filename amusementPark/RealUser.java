@@ -6,8 +6,14 @@ import java.util.Scanner;
 public class RealUser extends User{
     @Override
     void makeFun() {
+        System.out.println("""
+                cmds:
+                rc - Roller Coaster
+                fc - Futurama Cab
+                cr - Carousel""");
+
         Scanner scanner = new Scanner(System.in);
-        String atr = scanner.nextLine();
+        String atr = scanner.next();
         HashMap<String, Attraction> attractions = new HashMap<>();
         attractions.put("rc", new RollerCoaster());
         attractions.put("fc", new FuturamaCab());
@@ -16,11 +22,11 @@ public class RealUser extends User{
         while (!atr.equals("exit")) {
             if (!attractions.containsKey(atr)) {
                 System.out.println("not exist");
-                atr = scanner.nextLine();
+                atr = scanner.next();
                 continue;
             }
             attractions.get(atr).ride();
-            atr = scanner.nextLine();
+            atr = scanner.next();
         }
     }
 }
