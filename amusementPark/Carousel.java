@@ -6,7 +6,7 @@ public class Carousel extends Attraction{
     }
 
     @Override
-    void ride(){
+    protected void ride(){
         System.out.println("rotating wooOoOaH");
     }
 }

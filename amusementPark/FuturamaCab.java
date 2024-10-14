@@ -16,7 +16,7 @@ public class FuturamaCab extends Attraction {
         else setPrice(REGULAR_PRICE);
     }
     @Override
-    public void ride() {
+    protected void ride() {
         visit();
         System.out.println("u tried to die already " + count + " times lol");
     }

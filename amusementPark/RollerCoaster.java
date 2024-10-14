@@ -11,7 +11,7 @@ public class RollerCoaster extends Attraction{
         return rand.nextInt(20) + 1;
     }
     @Override
-    public void ride() {
+    protected void ride() {
         System.out.println(diceSimulator() <= 1 ? "u are dead lol xD xD xD" : "roller coaster wooah!");
     }
 }
