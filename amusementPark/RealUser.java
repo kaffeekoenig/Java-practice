@@ -9,7 +9,7 @@ public class RealUser extends User{
         Scanner scanner = new Scanner(System.in);
         String atr = scanner.nextLine();
         HashMap<String, Attraction> attractions = new HashMap<>();
-        attractions.put("rc", new RollyCoaster());
+        attractions.put("rc", new RollerCoaster());
         attractions.put("fc", new FuturamaCab());
         attractions.put("cr", new Carousel());
 
