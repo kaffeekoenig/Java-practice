@@ -1,9 +1,7 @@
 package chess;
 
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Objects;
 import java.util.logging.Logger;
 
 public class Main {
