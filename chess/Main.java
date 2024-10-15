@@ -16,7 +16,6 @@ public class Main {
         System.out.println("Игрок 1: " + players[0] + " - " + "Игрок 2: " + players[1]);
 
         try (FileReader fileReader = new FileReader(path)) {
-            String s = "";
             while (fileReader.ready()) System.out.print((char)fileReader.read());
         } catch (IOException e) {
             logger.severe("something went wrong >> " + e);
