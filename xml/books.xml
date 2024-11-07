@@ -1,0 +1,17 @@
+<books>
+    <book id="7">
+        <author>Oruell</author>
+        <name>1984</name>
+        <year>1949</year>
+    </book>
+    <book id="8">
+        <author>Bulgakov</author>
+        <name>Master and Margaret</name>
+        <year>1966</year>
+    </book>
+    <book id = "9">
+        <author>Ilf and Petrov</author>
+        <name>12 chairs</name>
+        <year>1928</year>
+    </book>
+</books>
