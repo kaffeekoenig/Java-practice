@@ -57,7 +57,7 @@ public class SaveData {
             }
 
         } catch (IOException | IllegalAccessException err) {
-            logger.severe("error " + err.toString());
+            logger.severe("error " + err);
         }
     }
 
