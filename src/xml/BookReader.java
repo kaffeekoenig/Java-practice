@@ -36,9 +36,9 @@ public class BookReader {
         try {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
-            Document document = builder.parse(new File("xml\\books.xml"));
+            Document document = builder.parse(new File("src.xml\\books.src.xml"));
             document.getDocumentElement().normalize();
-            logger.info("created xml successfully");
+            logger.info("created src.xml successfully");
 
             StringBuilder jsonBuilder = new StringBuilder();
             jsonBuilder.append("{\n  \"books\": [\n");
@@ -67,7 +67,7 @@ public class BookReader {
             }
 
             jsonBuilder.append("  ]\n}");
-            logger.info("converted xml to json successfully");
+            logger.info("converted src.xml to json successfully");
 
             try (FileWriter file = new FileWriter("books.json")) {
                 file.write(jsonBuilder.toString());
